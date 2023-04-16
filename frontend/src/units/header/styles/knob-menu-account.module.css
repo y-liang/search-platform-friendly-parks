@@ -1,0 +1,68 @@
+.wrapper {
+    position: absolute;
+    min-width: 150px;
+    background-color: var(--color-bgd-primary);
+    box-shadow: 0px 0px 3px 1px var(--color-bgd-tertiary);
+    border-radius: 9px;
+    margin: 6px auto;
+
+    top: 33px;
+    right: 0px;
+
+    z-index: 999;
+}
+
+
+.wrapper .item {
+    color: var(--color-txt-primary);
+    padding: 12px 24px 12px 18px;
+    display: block;
+    font-size: var(--font-size-small);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.wrapper .item:first-child {
+    margin-top: 9px;
+}
+
+.wrapper .item:nth-child(2) {
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.wrapper .divider {
+    border-top: 1px solid var(--color-bgd-tertiary);
+    width: 90%;
+    margin: auto;
+    padding: 0;
+}
+
+.wrapper .item:last-child {
+    margin-top: 6px;
+    margin-bottom: 9px;
+    
+    display: flex;
+    align-items: center;
+}
+
+/* change color of dropdown links on hover, active on mobile */
+.wrapper .item:hover, .wrapper .item:active {
+    background-color: var(--color-bgd-secondary);
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 750px) {
+    .wrapper {
+        min-width: 90px;
+        top: 30px;
+    }
+
+    .wrapper .item {
+        font-size: var(--font-size-smaller);
+        padding: 6px 15px 6px 12px;
+    }
+
+}

@@ -1,0 +1,9 @@
+.wrapper {}
+
+.map {
+    height: calc(100vh - 107px);
+    z-index: 1;
+}
+
+
+@media screen and (max-width: 750px) {}

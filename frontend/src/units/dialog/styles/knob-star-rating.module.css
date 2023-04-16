@@ -1,0 +1,27 @@
+.wrapper {
+    position: fixed;
+    min-width: 300px;
+    min-height: 300px;
+
+    width: 50%;
+    height: 75%;
+
+    left: calc(25% - 30px);
+    top: 12%;
+
+    padding: 30px;
+}
+
+.lighten {
+    color: yellow;
+}
+
+
+.dim {
+    color: gray;
+}
+
+
+.wrapper input {
+    display: none;
+}

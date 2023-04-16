@@ -1,0 +1,128 @@
+/* rating bar */
+
+.wrapper {
+    margin: 9px 0 9px 15px;
+}
+
+.wrapper>div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.half>div {
+    display: flex;
+    align-items: center;
+}
+
+
+.icon {
+    font-size: var(--font-size-medium);
+    color: var(--color-app-darker);
+}
+
+.subtitle {
+    font-size: var(--font-size-primary);
+    margin: 0 9px
+}
+
+
+.half:last-child {
+    margin-left: 30px;
+}
+
+.half li {
+    display: flex;
+    align-items: center;
+    margin: 6px 0;
+}
+
+
+
+.meter {
+    border-radius: 4px;
+    height: 8px;
+    background-color: var(--color-bgd-secondary);
+    overflow: hidden;
+
+    width: 240px;
+    margin-left: 9px;
+}
+
+.amount {
+    background-color: var(--color-txt-accent);
+    border-color: var(--color-txt-accent);
+    border-style: solid;
+    border-width: 4px 1px;
+    border-radius: 4px;
+    width: 0;
+}
+
+
+.total {
+    font-weight: 300;
+    font-size: var(--font-size-smaller);
+    color: var(--color-txt-tertiary);
+}
+
+
+
+/*** currently compatible, for meter ***/
+/* {park.ratings.overall.map((value, index) =>
+    <li key={index}>
+        <span className={styles.label}>{index}</span>
+        <div className={styles.meter}>
+            <div className={styles.amount} style={{ paddingLeft: `${(value / park.ratings.overall[0]) * 100 + 1.5}%` }}></div>
+        </div>
+    </li>
+).slice(1, 6).reverse()} // overall and friendly */
+
+/* .meter {
+    border-radius: 4px;
+    height: 8px;
+    background-color: var(--color-bgd-secondary);
+    overflow: hidden;
+
+    width: 240px;
+    margin-left: 9px;
+} */
+
+/* .amount {
+    background-color: var(--color-txt-accent);
+    border-color: var(--color-txt-accent);
+    border-style: solid;
+    border-width: 4px 1px;
+    border-radius: 4px;
+    width: 0;
+} */
+
+
+
+
+
+/*** future, compatibility for meter ***/
+/* {park.ratings.friendly.map((value, index) =>
+    <li key={index}>
+        <label htmlFor='rating'>{index}</label>
+        <meter id='rating' min='0' max='100'
+            value={(value / park.ratings.friendly[0]) * 100}
+            className={styles.meter}>
+            at {value}
+        </meter>
+    </li>
+).slice(1, 6).reverse()} // overall and friendly */
+
+/* .meter {
+    width: 240px;
+} */
+
+/* .meter::-webkit-meter-bar {
+    border: none;
+    background-color: var(--color-bgd-secondary);
+    margin-left: 9px;
+}
+
+.meter::-webkit-meter-optimum-value {
+    background-color: var(--color-txt-accent);
+    border-radius: 4px;
+} */

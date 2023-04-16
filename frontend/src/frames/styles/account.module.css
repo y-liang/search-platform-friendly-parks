@@ -1,0 +1,131 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+
+}
+
+.wrapper h3 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+.wrapper form {
+    width: 50%;
+    left: calc(25% - 30px);
+
+    top: 105px;
+    min-height: 300px;
+
+    padding: 30px;
+}
+
+.wrapper fieldset {
+    padding: 0 30px 15px;
+    margin-bottom: 15px;
+}
+
+.wrapper fieldset legend {
+    color: var(--color-txt-secondary);
+    font-weight: 400;
+}
+
+.wrapper fieldset input {
+    width: 100%;
+    background-color: transparent;
+} 
+.wrapper fieldset input::placeholder {
+    color: var(--color-txt-tertiary);
+} 
+
+.message {
+    margin-left: 30px;
+    color: var(--color-app-dark);
+    font-size: var(--font-size-small);
+}
+
+
+
+.row{
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row:last-child {
+    justify-content: space-evenly;
+}
+
+
+.toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 36px;
+    border-radius: 6px;
+    background-color: var(--color-bgd-secondary);
+    margin-left: 15px;
+
+    transition: all 0.3s ease;
+}
+
+.toggle:hover {
+    background-color: var(--color-bgd-tertiary);
+}
+
+
+
+.toggle span {
+    margin-right: 6px;
+    margin-top: 1px;
+}
+
+.forget, .instead {
+    color: var(--color-txt-accent);
+    font-size: var(--font-size-small);
+    float: right;
+    margin-right: 15px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.forget:hover, .instead:hover {
+   color: var(--color-txt-primary);
+}
+
+.submit {
+    padding: 9px 30px;
+    border-radius: 24px;
+    /* border: 1px solid var(--color-txt-accent); */
+    background-color: var(--color-bgd-accent);
+    transition: all 0.3s ease;
+}
+
+.submit:hover {
+    background-color: var(--color-txt-accent);
+}
+
+
+.input {
+    text-align: center;
+}
+
+.reminder {
+    padding: 30px;
+    text-align: center;
+    position: absolute;
+    top: 150px;
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+
+    .wrapper form {
+        width: 75%;
+        left: 12.5%;
+    }
+}

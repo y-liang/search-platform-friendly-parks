@@ -1,0 +1,108 @@
+/* review */
+
+.wrapper {
+    margin: 9px 0 9px 15px;
+}
+
+
+.wrapper li:not(:first-child) {
+    margin-top: 15px;
+}
+
+/* could be park or profile */
+.wrapper li div:first-child {
+    display: flex;
+}
+
+
+
+.profile, .park {
+    align-items: center;
+}
+
+.half:first-child{
+    flex-direction: column;
+}
+
+.half:last-child {
+    margin-left: 30px;
+    flex-direction: column;
+
+}
+
+.half {
+    display: flex;
+}
+
+.half:last-child {
+    align-items: center;
+}
+
+.half:last-child .top {
+    align-items: center;
+}
+
+.half:last-child .top .icon {
+    font-size: var(--font-size-small);
+    color: var(--color-txt-accent);
+    margin-left: 6px;
+    margin-right: 3px;
+}
+
+.half .top span {
+    font-size: var(--font-size-primary);
+    color: var(--color-txt-secondary);
+}
+
+.half .top span:first-child {
+    color: var(--color-txt-primary);
+}
+
+.half .bottom {
+    font-weight: 300;
+    color: var(--color-txt-tertiary);
+}
+
+.half:first-child .bottom {
+    font-size: var(--font-size-small);
+}
+
+.half:last-child .bottom {
+    font-size: var(--font-size-smaller);
+    margin-left: 9px;
+}
+
+/* review content */
+.content {
+    color: var(--color-txt-secondary);
+    margin: 6px 0 18px 0;
+    font-weight: 300;
+}
+
+/* read more */
+.wrapper li div:last-child .button {
+    color: var(--color-txt-tertiary);
+    font-size: var(--font-size-primary);
+}
+
+/* case knob */
+.button button {
+
+    font-size: var(--font-size-small);
+
+
+    width: 150px;
+    height: 36px;
+
+
+
+    transition: all 0.2s ease;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+

@@ -1,0 +1,44 @@
+/* the wrapper needed to position the dropdown content */
+.wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+
+.button {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: var(--color-txt-primary);
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+/* only 74% supports html dialog component, so stick to css display or visibility till wider adaption */
+.dialog {
+    display: none;
+}
+
+.dialog.visible {
+    display: block;
+}
+
+
+@media screen and (max-width: 750px) {
+    .button {
+        font-size: var(--font-size-small);
+    }
+
+    .menu {
+        min-width: 90px;
+        left: -72px;
+    }
+
+
+}

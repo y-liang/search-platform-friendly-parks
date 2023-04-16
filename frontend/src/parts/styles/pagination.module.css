@@ -1,0 +1,48 @@
+.wrapper {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+    padding: 15px 0;
+}
+
+.wrapper>* {
+    margin: 0 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+    font-size: var(--font-size-primary);
+    color: var(--color-txt-primary);
+
+    height: 30px;
+    width: 30px;
+}
+
+.wrapper button {
+    transition: all 0.1s ease;
+}
+
+.wrapper button:not(:disabled):hover {
+    background-color: var(--color-bgd-secondary);
+    cursor: pointer;
+}
+
+/* icon span hover */
+.wrapper button:not(:disabled) span:hover {
+    cursor: pointer;
+}
+
+.wrapper span.ellipsis:hover, .wrapper button:disabled {
+    cursor: default;
+}
+
+/* current page */
+.wrapper button:not(.arrow):disabled {
+    background-color: var(--color-bgd-tertiary);
+}
+
+.wrapper button.arrow:disabled {
+    opacity: 0.3;
+}

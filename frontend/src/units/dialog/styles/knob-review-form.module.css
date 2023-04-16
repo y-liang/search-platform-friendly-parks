@@ -1,0 +1,26 @@
+.wrapper {
+    position: fixed;
+    min-width: 300px;
+    min-height: 300px;
+
+    width: 50%;
+    height: 75%;
+
+    left: calc(25% - 30px);
+    top: 12%;
+
+    padding: 30px;
+
+    background-color: var(--color-bgd-primary);
+    border-radius: 9px;
+    margin: 6px auto;
+
+
+    z-index: 4;
+}
+
+
+
+
+
+@media screen and (max-width: 750px) {}

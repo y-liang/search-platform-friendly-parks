@@ -1,0 +1,271 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin: 15px auto 0 auto;
+    max-width: 720px;
+    width: 90%;
+
+}
+ 
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.present {
+    font-size: var(--font-size-primary);
+    background-color: var(--color-bgd-secondary);
+
+    width: 180px;
+    height: 36px;
+
+    border-radius: 60px;
+
+    transition: all 0.2s ease;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.present:hover {
+    box-shadow: 0 0 0 1px var(--color-bgd-tertiary);
+}
+
+.present button>span {
+    color: var(--color-txt-accent);
+}
+
+
+/* divider */
+
+.divider {
+    width: 100%;
+    border-bottom: 1px solid var(--color-bgd-tertiary);
+    margin: 15px 0 9px 0;
+}
+
+/* map */
+
+.map {
+    width: 100%;
+    margin: 9px 0;
+
+    z-index: 2;
+}
+
+.map>*>* {
+    border-radius: 15px;
+}
+
+.name {
+    font-size: var(--font-size-large);
+    font-weight: 500;
+    margin-left: 15px;
+}
+
+/* icon */
+.icon {
+    font-size: var(--font-size-medium);
+}
+
+.icon:not(.dim) {
+    color: var(--color-app-medium);
+}
+
+.icon.dim {
+    color: var(--color-bgd-tertiary);
+}
+
+
+/* info */
+
+.info {
+    margin: 9px 0 15px 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.info .label {
+    font-size: var(--font-size-primary);
+    color: var(--color-txt-primary);
+    margin-left: 3px;
+}
+
+
+.info .total {
+    font-weight: 300;
+    font-size: var(--font-size-primary);
+    color: var(--color-txt-tertiary);
+}
+
+.info .address .label {
+    font-weight: 300;
+    font-size: var(--font-size-primary);
+    color: var(--color-txt-secondary);
+}
+
+
+.info li {
+    display: flex;
+    align-items: center;
+}
+
+.info li:first-child {
+    margin-right: 15px;
+}
+
+.info li:last-child {
+    margin-left: 45px;
+}
+
+
+/* share */
+.share {
+    margin: 3px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.share>* {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--color-bgd-tertiary);
+
+    padding: 6px 9px;
+    border-radius: 15px;
+    margin: 6px;
+}
+
+.share>*:hover {
+    box-shadow: 0 0 0 1px var(--color-bgd-tertiary);
+}
+
+.share>*:not(:first-child) {
+    margin-left: 9px;
+}
+
+.share .icon {
+    color: var(--color-bgd-accent);
+    font-size: var(--font-size-primary);
+}
+
+.share .label {
+    color: var(--color-txt-accent);
+    font-size: var(--font-size-small);
+    margin-left: 3px;
+}
+
+
+/* external */
+.external {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 9px 0 9px 15px;
+
+    justify-content: space-between;
+}
+
+.external>div {
+    display: flex;
+    align-items: center;
+}
+
+.external>div:last-child>* {
+    display: flex;
+    align-items: center;
+}
+
+.external .label {
+    font-size: var(--font-size-small);
+}
+
+.external>div:last-child>* {
+    padding: 9px;
+    border-radius: 6px;
+}
+
+.external>div:last-child>*:hover {
+    background-color: var(--color-bgd-secondary);
+}
+
+.external>div:last-child>* .icon {
+    color: var(--color-txt-tertiary);
+}
+
+.external>div:last-child>* .label {
+    color: var(--color-txt-tertiary);
+}
+
+.external>div:last-child>*:first-child {
+    margin-left: 15px;
+}
+
+.external>div:last-child>*:last-child {
+    margin-left: 3px;
+}
+
+.external .label {
+    margin-left: 3px;
+}
+
+
+
+/* pet */
+
+.friendly {
+    margin: 9px 0 9px 15px;
+}
+
+.friendly .icon {
+    font-size: var(--font-size-medium);
+}
+
+.friendly .label {
+    font-size: var(--font-size-primary);
+    margin-left: 6px;
+}
+
+.friendly .policy {
+    font-size: var(--font-size-small);
+    color: var(--color-txt-tertiary);
+}
+
+.friendly .allowed {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.friendly .criteria {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 9px;
+}
+
+.friendly .criteria>li {
+    display: flex;
+    align-items: center;
+}
+
+.friendly .criteria>li:not(:first-child) {
+    margin-left: 15px;
+}
+
+
+
+
+
+@media screen and (max-width: 450px) {
+    .review .button {
+        margin-left: 0px;
+    }
+}

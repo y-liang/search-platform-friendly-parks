@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+body {
+    --desktop: ~"only screen and (min-width: 750px)";
+    --mobile: ~"only screen and (max-width: 750px)";
+
+    /* variables for dark light mode config, update ToggleTheme.js if revised */
+    --color-bgd-primary: var(--color-lightest);
+    --color-bgd-secondary: var(--color-lighter);
+    --color-bgd-tertiary: var(--color-light);
+    --color-bgd-accent: var(--color-app-light);
+    --color-txt-primary: var(--color-darkest);
+    --color-txt-secondary: var(--color-darker);
+    --color-txt-tertiary: var(--color-dark);
+    --color-txt-accent: var(--color-app-medium);
+    --color-bgd-number: var(--color-lightest-number);
+
+
+    /* other variables*/
+    --color-lightest: rgb(253, 253, 253);
+    --color-lighter: rgb(240, 245, 243);
+    --color-light: rgb(208, 223, 222);
+    --color-dark: rgb(141, 150, 149);
+    --color-darker: rgb(81, 87, 85);
+    --color-darkest: rgb(20, 26, 30);
+    --color-app-primary: rgb(3, 158, 154);
+    --color-app-lighter: rgb(229, 249, 248);
+    --color-app-light: rgb(120, 217, 213);
+    --color-app-medium: rgb(73, 186, 182);
+    --color-app-dark: rgb(0, 127, 129);
+    --color-app-darker: rgb(3, 42, 43);
+    --color-lightest-number: 253, 253, 253;
+    --color-darkest-number: 20, 26, 30;
+
+    --font-size-primary: 16px;
+    --font-size-larger: 36px;
+    --font-size-large: 24px;
+    --font-size-medium: 18px;
+    --font-size-small: 14px;
+    --font-size-smaller: 12px;
+    --font-size-smallest: 10px;
+
+
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+
+    /* not actually used in media query, just reference*/
+    --screen--medium: 1200px;
+    --screen--small: 750px;
+}
+
+
+
+
+
+a {
+    text-decoration: inherit;
+    cursor: pointer;
+    color: inherit;
+}
+
+a .material-icons-round {
+    cursor: pointer;
+}
+
+.material-icons-round {
+    cursor: default;
+    font-size: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+input[type=text], input[type=email], input[type=password], textarea {
+    text-overflow: ellipsis;
+    border: 1px solid transparent;
+    outline: 1px solid transparent;
+    height: var(--font-size-larger);
+    border-radius: 6px;
+    color: var(--color-txt-primary);
+    padding: 0 9px;
+}
+
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, textarea:focus {
+    outline: 1px solid var(--color-bgd-accent);
+    /* border: 1px solid var(--color-bgd-accent); */
+}
+
+input:invalid {
+    /* background-color: var(--color-app-medium); */
+}
+
+
+input[type=search]::-webkit-search-cancel-button {
+    appearance: none;
+    height: 21px;
+    width: 21px;
+    background-image: url('./assets/cancelbtn.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    color: inherit;
+}
+
+
+
+h2 {
+    font-size: var(--font-size-medium);
+    font-weight: 500;
+    display: inline-block;
+    margin: 15px;
+}
+
+h3 {
+    font-size: var(--font-size-medium);
+    font-weight: 400;
+    display: inline-block;
+    margin: 15px;
+}
+
+
+h4 {
+    font-size: var(--font-size-primary);
+    font-weight: 500;
+    display: inline-block;
+    margin: 9px;
+}
+
+h5, legend {
+    font-size: var(--font-size-primary);
+    font-weight: 300;
+    display: inline-block;
+    margin: 9px;
+}
+
+dialog {
+    color: transparent;
+    background-color: transparent;
+}
+
+
+/* backdrop for knob dialog components */
+.curtain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(var(--color-bgd-number), 0.3);
+    backdrop-filter: blur(3px);
+
+    z-index: 3;
+}
+
+/* form in knob dialog components */
+form {
+    position: fixed;
+    
+    background-color: var(--color-bgd-primary);
+    /* box-shadow: 0px 0px 0px 1px var(--color-bgd-tertiary); */
+    border-radius: 9px;
+    margin: 6px auto;
+
+
+    z-index: 4;
+}
+
+/* fieldset in knob dialog components */
+fieldset {
+    display: flex;
+    flex-wrap: wrap;
+
+    border-radius: 9px;
+    border-color: var(--color-bgd-tertiary);
+    border-style: solid;
+    border-width: 1px;
+}
+
+
+
+

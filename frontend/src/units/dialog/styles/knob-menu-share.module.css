@@ -1,0 +1,83 @@
+.wrapper {
+    position: absolute;
+    min-width: 180px;
+    background-color: var(--color-bgd-primary);
+    border: 1px solid var(--color-bgd-tertiary);
+    box-shadow: 0px 0px 3px 1px var(--color-bgd-tertiary);
+    border-radius: 9px;
+    margin-top: 24px;
+    left: -150px;
+
+    z-index: 999;
+}
+
+.item {
+    color: var(--color-txt-primary);
+    padding: 12px 24px 12px 18px;
+    display: flex;
+    align-items: center;
+    font-size: var(--font-size-small);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.icon {
+    font-size: var(--font-size-small);
+    margin-right: 9px;
+}
+
+.item:first-child {
+    margin-top: 9px;
+}
+
+.item:nth-child(2) {
+    margin-bottom: 9px;
+}
+
+
+
+.divider {
+    border-top: 1px solid var(--color-bgd-tertiary);
+    width: 90%;
+    margin: auto;
+    padding: 0;
+}
+
+.item:nth-child(4) {
+    margin-top: 9px;
+}
+
+.item:last-child {
+    margin-top: 6px;
+    margin-bottom: 9px;
+}
+
+/* change color of dropdown links on hover, active on mobile */
+.item:hover, .item:active {
+    background-color: var(--color-bgd-secondary);
+    cursor: pointer;
+}
+
+
+.toast {
+    position: absolute;
+    top: -54px;
+    left: -153px;
+
+    color: var(--color-app-medium);
+    font-size: var(--font-size-small);
+
+    z-index: 999;
+}
+
+
+@media screen and (max-width: 750px) {
+
+
+    .item {
+        font-size: var(--font-size-smaller);
+        padding: 6px 15px 6px 12px;
+    }
+
+}

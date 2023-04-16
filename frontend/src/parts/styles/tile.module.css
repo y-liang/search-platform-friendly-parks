@@ -1,0 +1,124 @@
+.tile {
+    width: calc((100% - 60px)/3);
+    min-width: 177px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border-radius: 15px;
+    box-shadow: 0px 0px 0px 1px var(--color-bgd-tertiary);
+
+    margin: 9px;
+    transition: all 0.3s ease;
+}
+
+
+.tile>div:first-child {
+    border-radius: 15px 15px 0 0;
+    padding: 15px 15px 0 15px;
+}
+
+.tile>div:last-child {
+    border-radius: 0 0 15px 15px;
+    padding: 15px 6px 15px 15px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tile:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 0px 1px var(--color-txt-tertiary);
+}
+
+.tile.selected>div:first-child {
+    background-color: var(--color-bgd-tertiary);
+}
+
+
+.tile .divider {
+    width: 30%;
+    margin-top: 15px;
+    border-bottom: 1px solid var(--color-bgd-tertiary);
+}
+
+.tile.selected .divider {
+    border-bottom: 1px solid transparent;
+}
+
+
+.name {
+    font-size: var(--font-size-primary);
+    font-weight: 500;
+    color: var(--color-txt-primary);
+}
+
+.address {
+    font-size: var(--font-size-small);
+    font-weight: 300;
+    color: var(--color-txt-tertiary);
+    margin-top: 3px;
+}
+
+
+
+
+
+.left>li {
+    display: flex;
+    align-items: center;
+}
+
+.left>li:not(:last-child) {
+    margin-bottom: 6px;
+}
+
+
+.left .icon {
+    font-size: var(--font-size-primary);
+    color: var(--color-app-primary);
+}
+
+.left .label {
+    font-size: var(--font-size-small);
+    margin-left: 6px;
+}
+
+
+.right {
+    display: none;
+}
+
+
+
+.tile:hover .right, .tile.selected .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.right>* {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: var(--font-size-primary);
+    cursor: pointer;
+    border-radius: 50%;
+
+    transition: all 0.3s ease;
+}
+
+.right>*:hover {
+    background-color: var(--color-bgd-secondary);
+    cursor: pointer;
+}
+
+.right a, .right button {
+    color: var(--color-txt-secondary);
+}
